@@ -99,6 +99,10 @@ declare module 'react-native-swiper' {
         automaticallyAdjustContentInsets?: boolean
         // Enables/Disables swiping
         scrollEnabled?: boolean
+
+        keyboardDismissMode?: 'none' | 'on-drag' | 'interactive'
+
+        keyboardShouldPersistTaps?: boolean | 'always' | 'never' | 'handled'
     }
 
     export default class Swiper extends Component<SwiperProps, any> {
